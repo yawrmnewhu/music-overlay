@@ -5,7 +5,7 @@ window.OVERLAY_CONFIG = {
   // Your Nightbot channel name (from your dashboard URL: nightbot.tv/commands)
   // Find it: go to https://api.nightbot.tv/1/song_requests/queue and use the channel id,
   // OR use public endpoint with your channel slug.
-  NIGHTBOT_CHANNEL: "Usmann-29",
+  NIGHTBOT_CHANNEL: "yrm-idk",
 
   // Polling interval (ms) — how often to refresh queue
   POLL_INTERVAL: 5000,
