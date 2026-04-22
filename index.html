@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Cinematic Music Overlay</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Ambient background layer -->
+  <div class="ambient-bg">
+    <div class="ambient-layer" id="ambientLayer"></div>
+    <div class="noise"></div>
+    <div class="particles" id="particles"></div>
+  </div>
+
+  <!-- Main player container -->
+  <div class="player" id="player">
+    <!-- Now Playing -->
+    <div class="now-playing" id="nowPlaying">
+      <div class="art-wrap">
+        <div class="art-glow" id="artGlow"></div>
+        <div class="art-ring"></div>
+        <div class="art" id="albumArt">
+          <img id="thumb" src="" alt="" />
+          <div class="art-shine"></div>
+        </div>
+        <!-- Audio visualizer ring around art -->
+        <div class="visualizer" id="visualizer">
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+
+      <div class="info">
+        <div class="status-pill">
+          <span class="live-dot"></span>
+          <span class="status-text">NOW PLAYING</span>
+        </div>
+        <h1 class="title" id="title">Waiting for song...</h1>
+        <div class="artist" id="artist">Nightbot Queue</div>
+
+        <div class="progress-wrap">
+          <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+            <div class="progress-glow" id="progressGlow"></div>
+          </div>
+          <div class="time-row">
+            <span id="timeCurrent">0:00</span>
+            <span id="timeTotal">0:00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Queue -->
+    <div class="queue-section">
+      <div class="queue-header">
+        <div class="queue-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h12M3 18h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          <span>UP NEXT</span>
+        </div>
+        <div class="queue-count" id="queueCount">0</div>
+      </div>
+      <div class="queue-list" id="queueList"></div>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
